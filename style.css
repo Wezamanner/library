@@ -3,9 +3,96 @@
     margin: 0;
     box-sizing: border-box;
 }
-div{
-    background-color: black;
+.container{
+    margin: 70px;
+    height: 80vh;
+    background: linear-gradient(135deg, rgb(211, 218, 224), rgb(10, 54, 148));
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    position: relative;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    background:linear-gradient(135deg, rgb(100, 137, 165), rgb(161, 51, 189));
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+     transition: 0.3s;
+}
+.delete-btn,.read-status{
+    width: 10em;
+    height: 2em;
+    margin-left:5em ;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+.add-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background: rgb(180, 89, 89);
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+form{
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    margin:30px;
     width: 30vw;
-    height: 20vh;
-    margin: 40px;
+    height: 30vh;
+    background-color: rgb(224, 221, 215);
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition: 0.3s;
+    /* border-radius: 5rem;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3); */
+}
+.form.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+input{
+    width: 10vw;
+    height: 2vh;
+}
+.submit-btn{
+    width: 10vw;
+    height: 3vh;
+}
+caption{
+    display: inline-block;
+}
+.book-display{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.card:hover,.not-read:hover{
+    transform: translateY(-10px);
+}
+.titl, .auth, .page{
+    display: flex;
+}
+.not-read{
+    background:linear-gradient(135deg, rgb(231, 223, 231), rgb(19, 18, 18));
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
 }

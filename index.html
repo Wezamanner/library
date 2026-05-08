@@ -6,10 +6,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="first"></div>
-    <div class="second"></div>
-    <div class="third"></div>
+<body >
+    <div class="container">
+        <div class="book-display"></div>
+        <button class="add-btn">Add Book</button>
+        <div class="book-container"></div>
+        <form method="#" class="form">
+            <caption>Enter Book Detail: </caption>
+            <div class="titl">
+            <label for="title">Book Title: </label>
+            <input type="text"  class="title" id="title" required>
+            </div>  
+            <div class="aut">   
+            <label for="author">Book Author: </label>
+            <input type="text"  class="author" id="author" required>
+            </div>
+            <div class="pag">
+            <label for="pages">Number of pages: </label>
+            <input type="number"  class="number-of-pages" id="pages" required>
+            </div>
+            <!-- <div class="read">
+                <p>Have You read this book?</p>
+                <label >
+                    <input type="radio" name="readStatus" value="yes" required>YES
+                </label>
+                  <label >
+                    <input type="radio" name="readStatus" value="no" required>NO
+                </label>
+            </div> -->
+            <button type="submit" class="submit-btn">submit</button>      
+        </form>
+        
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
