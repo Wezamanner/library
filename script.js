@@ -5,12 +5,14 @@ const form = document.querySelector(`form`);
 const submitBtn = document.querySelector(`.submit-btn`);
 const myLibrary = [];
 //constructer
-function Book(title,author,numberOfPages){
+class Book{
+constructor(title,author,numberOfPages){
     this.title = title
     this.id=crypto.randomUUID();
     this.author=author;
     this.numberOfPages=numberOfPages;
     this.read=false;
+}
 }
 //adding to the myLibrary array
 function addBookToLibrary(bookName,bookAuthor,numberOfPages){
